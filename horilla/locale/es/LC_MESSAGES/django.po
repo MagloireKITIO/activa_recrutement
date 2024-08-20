@@ -10078,7 +10078,7 @@ msgid "Stage type"
 msgstr "Tipo de etapa"
 
 #: base/translator.py:124
-=msgid "Scheduled from"
+msgid "Scheduled from"
 msgstr "Programado desde"
 
 #: base/translator.py:125
@@ -10613,7 +10613,7 @@ msgstr "vista-horario-turno-empleado"
 
 #: base/translator.py:265
 msgid "rotating-shift-view"
-msgstr "vista-de-cambio-giratoria""
+msgstr "vista-de-cambio-giratoria"
 
 #: base/translator.py:266
 msgid "attendance-settings-view"
@@ -11096,7 +11096,7 @@ msgstr "La asignación circular es {}"
 
 #: base/views.py:2374 base/views.py:2471
 msgid "Rotating shift assign not found."
-msgstr "No se encontró la asignación de turno rotativo.
+msgstr "No se encontró la asignación de turno rotativo."
 
 #: base/views.py:2410
 #, python-brace-format

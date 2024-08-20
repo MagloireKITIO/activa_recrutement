@@ -214,7 +214,7 @@
 									>{% trans "About" %}</a
 								>
 							</li>
-							<li data-cell-index="19" data-cell-title="{% trans "Work type & Shift" %}" class="oh-general__tab">
+							<!-- <li data-cell-index="19" data-cell-title="{% trans "Work type & Shift" %}" class="oh-general__tab">
 								<a
 								hx-get="{% url 'shift-tab' employee.id %}?profile=true"
 								hx-target="#shift_target"
@@ -224,8 +224,8 @@
 								role="button"
 								>{% trans "Work Type & Shift" %}</a
 								>
-							</li>
-							<li data-cell-index="18" data-cell-title="{% trans "Attendance" %}" class="oh-general__tab">
+							</li> -->
+							<!-- <li data-cell-index="18" data-cell-title="{% trans "Attendance" %}" class="oh-general__tab">
 								<a
 								hx-get={% url 'profile-attendance-tab' %}
 								hx-target="#attendance_target"
@@ -236,8 +236,8 @@
 								role="button"
 								>{% trans "Attendance" %}</a
 								>
-							</li>
-							<li data-cell-index="17" data-cell-title="{% trans "Leave" %}" class="oh-general__tab">
+							</li> -->
+							<!-- <li data-cell-index="17" data-cell-title="{% trans "Leave" %}" class="oh-general__tab">
 								<a
 								href="#"
 								class="oh-general__tab-link"
@@ -245,8 +245,8 @@
 								data-target="#leave"
 								>{% trans "Leave" %}</a
 								>
-							</li>
-							<li data-cell-index="16" data-cell-title="{% trans "Payroll" %}" class="oh-general__tab">
+							</li> -->
+							<!-- <li data-cell-index="16" data-cell-title="{% trans "Payroll" %}" class="oh-general__tab">
 								<a
 								href="#"
 								class="oh-general__tab-link"
@@ -254,7 +254,7 @@
 								data-target="#payroll"
 								>{% trans "Payroll" %}</a
 								>
-							</li>
+							</li> -->
 							{% comment %} <li data-cell-index="16" data-cell-title="{% trans "Interview" %}" class="oh-general__tab">
 								<a
 								href="#"
@@ -264,7 +264,7 @@
 								>{% trans "Interview" %}</a
 								>
 							</li> {% endcomment %}
-							<li data-cell-index="15" data-cell-title="{% trans "Allowance & Deduction" %}" class="oh-general__tab">
+							<!-- <li data-cell-index="15" data-cell-title="{% trans "Allowance & Deduction" %}" class="oh-general__tab">
 								<a
 								hx-get="{% url 'allowances-deductions-tab' employee.id %}"
 								hx-target="#allowance_deduction"
@@ -274,8 +274,8 @@
 								role="button"
 								>{% trans "Allowance & Deduction" %}</a
 								>
-							</li>
-							<li data-cell-index="14" data-cell-title="{% trans "Penalty Account" %}" class="oh-general__tab">
+							</li> -->
+							<!-- <li data-cell-index="14" data-cell-title="{% trans "Penalty Account" %}" class="oh-general__tab">
 								<a
 								data-action="general-tab"
 								data-target="#penaltyTarget"
@@ -284,8 +284,8 @@
 								role="button"
 								>{% trans "Penalty Account" %}</a
 								>
-							</li>
-							<li data-cell-index="13" data-cell-title="{% trans "Assets" %}" class="oh-general__tab">
+							</li> -->
+							<!-- <li data-cell-index="13" data-cell-title="{% trans "Assets" %}" class="oh-general__tab">
 								<a
 								hx-get={% url 'profile-asset-tab' employee.id %}
 								hx-target="#asset_target"
@@ -296,8 +296,8 @@
 								role="button"
 								>{% trans "Assets" %}</a
 								>
-							</li>
-							<li data-cell-index="12" data-cell-title="{% trans "Performance" %}" class="oh-general__tab">
+							</li> -->
+							<!-- <li data-cell-index="12" data-cell-title="{% trans "Performance" %}" class="oh-general__tab">
 								<a
 								hx-get={% url 'performance-tab' employee.id %}
 								hx-target="#performance_target"
@@ -308,8 +308,8 @@
 								role="button"
 								>{% trans "Performance" %}</a
 								>
-							</li>
-							<li data-cell-index="11" data-cell-title="{% trans "Documents" %}" class="oh-general__tab">
+							</li> -->
+							<!-- <li data-cell-index="11" data-cell-title="{% trans "Documents" %}" class="oh-general__tab">
 								<a
 								hx-get="{% url 'document-tab' employee.id %}?employee_view=true"
 								hx-target="#document_target"
@@ -319,8 +319,8 @@
 								role="button"
 								>{% trans "Documents" %}</a
 								>
-							</li>
-							<li data-cell-index="10" data-cell-title="{% trans "Bonus Points" %}" class="oh-general__tab">
+							</li> -->
+							<!-- <li data-cell-index="10" data-cell-title="{% trans "Bonus Points" %}" class="oh-general__tab">
 								<a
 								hx-get={% url 'bonus-points-tab' employee.id %}
 								hx-target="#bonus_points_target"
@@ -330,7 +330,7 @@
 								role="button"
 								>{% trans "Bonus Points" %}</a
 								>
-							</li>
+							</li> -->
 							<li data-cell-index="20" data-cell-title="{% trans "Interview" %}" class="oh-general__tab">
 								<a
 								href="#"
@@ -360,59 +360,59 @@
 							id="personal_target"
 						>
 						</div>
-						<div
+						<!-- <div
 						class="oh-general__tab-target oh-profile__info-tab mb-4"
 						id="penaltyTarget"
 						>
 						{% include 'tabs/penalty_account.html' %}
-						</div>
-						<div
+						</div> -->
+						<!-- <div
 							class="oh-general__tab-target oh-profile__info-tab mb-4 d-none"
 							id="payroll"
 						>
 							{% include 'tabs/payroll-tab.html' %}
-						</div>
+						</div> -->
 						<div
 							class="oh-general__tab-target oh-profile__info-tab mb-4 d-none"
 							id="interview"
 						>
 							{% include 'tabs/scheduled_interview.html' %}
 						</div>
-						<div
+						<!-- <div
 							class="oh-general__tab-target oh-profile__info-tab mb-4 d-none"
 							id="bonus_points_target"
 						 >
 							{% comment %} {% include "tabs/bonus_points.html" %} {% endcomment %}
-						</div>
-						<div
+						</div> -->
+						<!-- <div
 							class="oh-general__tab-target oh-profile__info-tab mt-3 mb-4 d-none"
 							id="resignation_target"
 						 >
 							{% include "tabs/resignation.html" %}
 							<div id="resignation_hx_target" class="mt-2"></div>
-						</div>
-						<div
+						</div> -->
+						<!-- <div
 							class="oh-general__tab-target oh-profile__info-tab mb-4 d-none"
 							id="allowance_deduction"
 						>
-						</div>
+						</div> -->
 						<div class="oh-general__tab-target oh-profile__info-tab mb-4 d-none"
 							id="shift_target"
 						>
 						</div>
 
-						<div
+						<!-- <div
 							class="oh-general__tab-target oh-profile__info-tab mb-4 d-none"
 							id="attendance_target"
 						>
-						</div>
+						</div> -->
 
 
-						<div
+						<!-- <div
 						class="oh-general__tab-target oh-profile__info-tab mb-4 d-none"
 						id="allowance_deduction"
 						>
-						</div>
+						</div> -->
 
 
 						<!-- <div
@@ -426,30 +426,30 @@
 							id="timesheet"
 						>
 						</div> -->
-						<div
+						<!-- <div
 							class="oh-general__tab-target oh-profile__info-tab mb-4 d-none"
 							id="asset_target"
 						>
-						</div>
+						</div> -->
 
-						<div
+						<!-- <div
 						class="oh-general__tab-target oh-profile__info-tab mb-4 d-none"
 						id="document_target"
 						>
-						</div>
+						</div> -->
 
-						<div
+						<!-- <div
 							class="oh-general__tab-target oh-profile__info-tab mb-4 d-none"
 							id="performance_target"
 						>
-						</div>
+						</div> -->
 
-						<div
+						<!-- <div
 							class="oh-general__tab-target oh-profile__info-tab mb-4 d-none"
 							id="leave"
 						>
 							{% include 'tabs/leave-tab.html' %}
-						</div>
+						</div> -->
 						<div
 						class="oh-general__tab-target oh-profile__info-tab mb-4 d-none"
 						id="note_target"
