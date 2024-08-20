@@ -100,7 +100,7 @@ def is_recruitmentmanager(request, rec_id=False):
         employee.recruitment_set.all(),
     )
 
-
+# la pagination
 def paginator_qry(qryset, page_number):
     """
     This method is used to generate common paginator limit.
