@@ -100,7 +100,7 @@ def is_recruitmentmanager(request, rec_id=False):
         employee.recruitment_set.all(),
     )
 
-# la pagination
+
 def paginator_qry(qryset, page_number):
     """
     This method is used to generate common paginator limit.
@@ -163,6 +163,7 @@ def remove_recruitment_manager(request, mid, rid):
         mid : employee manager_id in the recruitment
         rid : recruitment_id
     """
+    
     recruitment_obj = Recruitment.objects.get(id=rid)
     manager = Employee.objects.get(id=mid)
     recruitment_obj.recruitment_managers.remove(manager)
